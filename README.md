@@ -1,1 +1,1 @@
-# R_TinyTeX_Poster
+# 【R】TinyTeXで発表用のポスターを作る

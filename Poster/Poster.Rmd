@@ -1,0 +1,148 @@
+---
+output:
+  beamer_presentation:
+    latex_engine: lualatex
+    theme: "Berlin"
+    fonttheme: "professionalfonts" # フォントの設定
+header-includes:
+  - \usepackage{luatexja} # 日本語の文章を作成
+  - \usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter} # posterを作ると明示
+  - \useinnertheme{circles} # 箇条書きのスタイルの設定
+  - \setbeamercolor{block title}{bg=orange!130, fg=white} # blockのtitleの色
+  - \setbeamercolor{block body}{bg=orange!10, fg=black} # blockのbodyの色
+  - \renewcommand{\figurename}{図} #図のキャプションをfigureから図に
+  - \renewcommand{\tablename}{表} #表のキャプションをtableから表
+---
+
+<!-- 幅調整 -->
+
+```{=latex}
+\vspace{0.0\textheight}
+```
+
+<!-- タイトル -->
+
+```{=latex}
+\begin{minipage}[]{0.77\columnwidth}
+\huge 研究タイトル\\
+[5mm]
+\large hoge大学 hoge学部 hoge学科 x年 名前
+\end{minipage}
+\begin{minipage}[]{0.22\columnwidth}
+\begin{figure}\centering
+\includegraphics[width=\columnwidth]{Logo/logo.png}
+\end{figure}
+\end{minipage}
+```
+
+<!-- はじめに -->
+
+```{=latex}
+\begin{minipage}[]{\columnwidth}
+\begin{block}{はじめに}
+研究について概要を書く
+\end{block}
+\end{minipage}
+```
+
+<!-- 内容の開始 -->
+
+```{=latex}
+\begin{columns}[T]
+```
+
+<!-- 1列目の開始 -->
+
+```{=latex}
+\begin{column}{.49\linewidth} % ここから1列目
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section1}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section2}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section3}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section4}
+hogehoge
+\end{block}
+```
+
+<!-- 1列目の終了 -->
+
+```{=latex}
+\end{column} % 1列目の終了
+```
+
+<!-- 2列目の開始 -->
+
+```{=latex}
+\begin{column}{.49\linewidth} % ここから2列目
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section5}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section6}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section7}
+hogehoge
+\end{block}
+```
+
+<!-- Section -->
+
+```{=latex}
+\begin{block}{Section8}
+hogehoge
+\end{block}
+```
+
+<!-- 2列目の終了 -->
+
+```{=latex}
+\end{column} % 2列目の終了
+```
+
+<!-- 内容の終わり -->
+
+```{=latex}
+\end{columns}
+```
+
+
